@@ -141,30 +141,37 @@
         </div>
       </div>
     </section>
-  
 
 
-
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <div align="center">
-          <img src="./static/imgs/overview.jpg" alt="Image description" width="100%">
-        </div>  
-        <br> 
-        <!-- <h2 class="subtitle has-text-centered"> -->
-        <h2 class="subtitle">
-          <strong>Trokens</strong> transforms trajectory points into semantic-aware relational
-          tokens for action recognition.<br>
-          <span style="color: #838585;">(A)</span> Given an input video, we extract appearance tokens using DINOv2. <span style="color: #007bff;">(B)</span> We then cluster these tokens and
-sample semantic-aware points in the initial frame, which are tracked using Co-tracker [25] to obtain point trajectories. <span style="color: #ed7e0e;">(C)</span> We compute
-intra- and inter-motion features, reorder appearance tokens via token alignment [28], and fuse them with motion features via element-wise
-addition to form semantic-aware relational trajectory tokens. <span style="color: #9413ea;">(D)</span> Finally, we input these tokens into a Decoupled Space-Time Transformer
-for few-shot action classification.
-        </h2>
-        
+<section class="section body" style="padding-top: 0;">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3" style="text-align: center; padding-bottom: 0px; margin-top: 0;">Motivations</h2>
+          <!-- <h2 class="subtitle is-4" style="text-align: center;">Defining Visual Affordances</h2> -->
+          <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths ">
+          <div class="content has-text-justified">
+            
+            <tr>
+              <td>
+                <div class="row">
+                  <div class="col">
+                    <img src="./static/imgs/teaser.jpg" alt="Image description" width="100%">
+                  </div>
+                </div>
+                <div class="columns is-centered">
+                  <div class="column">
+                      <p style="text-align: left;font-size: 18px">While recent advances in point tracking have been shown to improve few-shot action recognition, two fundamental challenges persist. <strong>(a) How can we develop an effective sampling strategy of query points for tracking that balances coverage and efficiency? </strong> Our semantic-aware points adapts better to object scale and semantic relevance while existing methods w/ grid sampling missed small objects w/ important motion (e.g., knife). <strong>(b) How can we explicitly model and utilize the motion patterns captured in point trajectories? </strong> We explicitly model relational motions within a trajectory and across trajectories.</p>
+                </div>
+              </div>
+              </td>
+            </tr>
+          </div>
+          </div>
+          </div>
+        </div>
       </div>
-  
     </div>
   </section>
 
@@ -209,37 +216,33 @@ for few-shot action classification.
     </div>
   </section>
 
-  <section class="section body">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3" style="text-align: center; padding-bottom: 10px;">Motivations</h2>
-          <!-- <h2 class="subtitle is-4" style="text-align: center;">Defining Visual Affordances</h2> -->
-          <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths ">
-          <div class="content has-text-justified">
-            
-            <tr>
-              <td>
-                <div class="row">
-                  <div class="col">
-                    <img src="./static/imgs/teaser.jpg" alt="Image description" width="100%">
-                  </div>
-                </div>
-                <div class="columns is-centered">
-                  <div class="column">
-                      <p style="text-align: left;font-size: 18px"><strong>(a) How can we develop an effective sampling strategy of query points for tracking that balances coverage and efficiency? </strong> Our semantic-aware points adapts better to object scale and semantic relevance while existing methods w/ grid sampling missed small objects w/ important motion (e.g., knife). <strong>(b) How can we explicitly model and utilize the motion patterns captured in point trajectories? </strong> We explicitly model relational motions within a trajectory and across trajectories.</p>
-                </div>
-              </div>
-              </td>
-            </tr>
-          </div>
-          </div>
-          </div>
-        </div>
+  
+
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h2 class="title is-3" style="text-align: center; padding-bottom: 10px; margin-top: 15px;">Method</h2>
+
+        <div align="center">
+          <img src="./static/imgs/overview.jpg" alt="Image description" width="100%">
+        </div>  
+        <br> 
+        <h2 class="subtitle">
+          <strong>Trokens</strong> transforms trajectory points into semantic-aware relational
+          tokens for action recognition.<br>
+          <span style="color: #838585;">(A)</span> Given an input video, we extract appearance tokens using DINOv2. <span style="color: #007bff;">(B)</span> We then cluster these tokens and
+sample semantic-aware points in the initial frame, which are tracked using Co-tracker [25] to obtain point trajectories. <span style="color: #ed7e0e;">(C)</span> We compute
+intra- and inter-motion features, reorder appearance tokens via token alignment [28], and fuse them with motion features via element-wise
+addition to form semantic-aware relational trajectory tokens. <span style="color: #9413ea;">(D)</span> Finally, we input these tokens into a Decoupled Space-Time Transformer
+for few-shot action classification.
+        </h2>
+        
       </div>
+  
     </div>
   </section>
+
 
   <section class="section body">
     <div class="container">
