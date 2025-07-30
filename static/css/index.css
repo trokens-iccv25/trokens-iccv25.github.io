@@ -71,7 +71,7 @@ body {
 }
 
 .publication-authors a {
-   color: hsla(39, 82%, 55%, 0.862) !important;
+   color: #2563eb !important;
 }
 
 .publication-authors a:hover {
@@ -169,4 +169,43 @@ body {
   display: inline-block;
   margin-bottom: 10px;
   text-align: center;
+}
+
+.conference-logo {
+  width: 20%;
+  max-width: 200px;
+  min-width: 80px;
+  height: auto;
+}
+
+/* Responsive adjustments for different screen sizes */
+@media screen and (max-width: 768px) {
+  .conference-logo {
+    width: 30%;
+    max-width: 180px;
+    min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .conference-logo {
+    width: 40%;
+    max-width: 150px;
+    min-width: 120px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .conference-logo {
+    width: 50%;
+    max-width: 140px;
+    min-width: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .conference-logo {
+    width: 15%;
+    max-width: 250px;
+  }
 }
