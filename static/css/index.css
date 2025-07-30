@@ -209,3 +209,102 @@ body {
     max-width: 250px;
   }
 }
+
+/* Responsive TL;DR section */
+.tldr-responsive {
+  font-size: 20px;
+  font-weight: 400;
+  color: #374151;
+  line-height: 1.5;
+  margin: 0;
+  font-family: 'Google Sans', sans-serif;
+}
+
+.tldr-label {
+  color: #6b7280;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 12px;
+}
+
+.tldr-container {
+  margin: 0 0 20px 0;
+}
+
+.tldr-column {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+/* Media queries for responsive scaling */
+@media screen and (max-width: 480px) {
+  .tldr-responsive {
+    font-size: 14px;
+    white-space: normal;
+  }
+  .tldr-label {
+    font-size: 12px;
+    margin-right: 8px;
+  }
+  .tldr-container {
+    margin: 0 0 15px 0;
+  }
+  .tldr-column {
+    max-width: 95%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .tldr-responsive {
+    font-size: 16px;
+    white-space: normal;
+  }
+  .tldr-label {
+    font-size: 13px;
+    margin-right: 10px;
+  }
+  .tldr-column {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .tldr-responsive {
+    font-size: 18px;
+  }
+  .tldr-label {
+    font-size: 15px;
+    margin-right: 12px;
+  }
+  .tldr-column {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+  .tldr-responsive {
+    font-size: 20px;
+  }
+  .tldr-label {
+    font-size: 16px;
+    margin-right: 12px;
+  }
+  .tldr-column {
+    max-width: 75%;
+  }
+}
+
+@media screen and (min-width: 1401px) {
+  .tldr-responsive {
+    font-size: 22px;
+  }
+  .tldr-label {
+    font-size: 17px;
+    margin-right: 14px;
+  }
+  .tldr-column {
+    max-width: 70%;
+  }
+}
