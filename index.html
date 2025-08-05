@@ -102,24 +102,21 @@
                     </a>
                   </span>
                   <span class="link-block">
-                    <a href="https://github.com/trokens-iccv25"
+                    <a href="https://github.com/pulkitkumar95/trokens"
                        class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                           <i class="fab fa-github"></i>
                       </span>
-                      <span> Code (Coming Soon)</span>
+                      <span> Code </span>
                       </a>
                     </span>
                     <!-- Dataset Link. -->
-                    <!-- <span class="link-block">
-                      <a href="https://huggingface.co/collections/furonghuang-lab/tracevla-677d98483d23e9cec903d076"
+                    <span class="link-block">
+                      <a href="https://huggingface.co/datasets/pulkitkumar95/trokens_pt_data"
                          class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                            <img src="static/images/hf_icon.svg" />
-                        </span>
-                        <span>Models</span>
+                        <span>🤗 Trokens data </span>
                         </a>
-                      </span> -->
+                      </span>
 
                   <!-- <span class="link-block">
                     <a target="_blank" href="https://x.com/cheryyun_l/status/1877746315297230874"
@@ -392,12 +389,12 @@ for few-shot action classification.
               </div>
               <div class="row">
                 <div class="col text-center" style="margin-left: -30px;">
-                  <img src="./static/imgs/num_points_ablation.png" alt="Image description" width="80%">
+                  <img src="./static/imgs/acc_vs_flops.png" alt="Image description" width="80%">
                 </div>
               </div>
               <div class="columns is-centered ">
                 <div class="column">
-                    <p style="text-align: left;font-size: 18px">Few-shot accuracy comparison on SSV2 Small and SSV2 Full (1-shot setting) by varying the number of points. <strong>Trokens</strong> with just 32 points outperforms TATs [28] using 256 points, demonstrating that semantic-aware sampling captures more informative motion information with significantly fewer points.</p>
+                    <p style="text-align: left;font-size: 18px"><strong>Trokens</strong> offsets the computational cost of clustering by efficiently selecting points that achieve higher performance with fewer tracking points. For both SSV2 Small and SSV2 Full,  <strong>Trokens</strong>  with just 32 points surpasses TATs (uniform sampling) with 256 points, while using 82% fewer inference-time FLOPs overall.</p>
                 </div>
               </div>
               </td>
